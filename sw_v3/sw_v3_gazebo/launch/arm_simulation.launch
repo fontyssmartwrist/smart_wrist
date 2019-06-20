@@ -1,0 +1,14 @@
+<launch>
+
+    <include file="$(find sw_v3_gazebo)/launch/sw_v3_world.launch"/>
+
+    <include file="$(find sw_v3_control)/launch/sw_v3_control.launch"/>
+
+    <node name="joy_node" pkg="joy" type="joy_node" output="screen"/>
+
+    <!-- <node name="server" pkg="sw_v3_gazebo" type="server.py" output="screen"/> -->
+
+    <node name="kinematic_model_node" pkg="kinematic_model" type="kinematic_model_node" output="screen"/>
+
+
+</launch>
