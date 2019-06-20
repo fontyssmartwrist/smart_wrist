@@ -17,20 +17,20 @@ The sw_v3 folder contains several packages that simulate the first concept of th
 4. in your terminal: source ~/catkin_ws/devel/setup.bash
 5. Now you should be able to use all of the packages
 
-#sw_v3_description
+# sw_v3_description
 
 This package contains the urdf/xacro model of the SW(smart wrist).
 
 It has a launch a file to visualize the module in RVIZ, can be run with the following command:
     roslaunch sw_v3_description sw_v3_rviz.launch
 
-#sw_v3_control
+# sw_v3_control
 
 This package is the controller for the smart wrist joints, the parameters can be tuned in the cinfiguration file.
 
 It can be launched with: roslaunch sw_v3_control sw_v3_control.launch 
 
-#kinematic_model
+# kinematic_model
 
 This packages runs a node that listens to two topics:
 1. /joy : from a joystick package
@@ -42,7 +42,7 @@ Then it publishes them to the controller for the simulation to move.
 
 It can be run with: rosrun kinematic_model kinematic_model_node
 
-#sw_v3_gazebo
+# sw_v3_gazebo
 
 This package is for the simulation of the model in gazebo, it has two launch files:
 
